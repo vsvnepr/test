@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- Инструкция для веб браузера что это HTML файл-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Указаывается кодировка-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Показывать контент на всю ширину экрана content="width=device-width-->
+    <title>CV</title>  <!--Название вкладки страницы, обязательно для SEO -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <!--Подключаем внешнию библиотеку стилей CSS популярную Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--Подключили внешний JS файл-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png"><!--Инструкции для разных устройств отображения favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href=".favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand p-0" href="/"><img src="src/logo.png" alt="logo" width="50"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav"> <!--ul -создать список-->
+              <li class="nav-item">
+                <a class="nav-link active" href="html.html">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="css.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="console.html">Console JS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <h1>Vyacheslav Nepryakhin</h1>
+    <img src="./src/myFoto.jfif" alt="FotoAuthor">
+    <hr> <!--Длинная горизонатльная черта-->
+
+     <p> <!--новый абзац -->
+      Отличия тегов: <br> <!--Перенос на новую строку -->
+      <i> "i>"- Курсив визуально </i><br> 
+      <b> "b>" - жирный визуальный </b> <br>
+      <em>"em>"- такой курсив меняет смысл, выделяет интонацией  </em>  <br>
+      <strong>"strong>" - такой жирный указывает на важность, для
+         ограниченных людей эти теги выделяются интонацией </strong>
+    </p> 
+    <ul>Список социальных сетей:
+      <li><a href="https://www.instagram.com/slava.nepryakhin/" target="_blank">Instagram</a></li>
+      <li><a href="skype:slnepr" target="_blank">Skype</a></li>
+      <li><a href="https://www.linkedin.com/in/viachaslau-neprakhin/" target="_blank">Linkinid</a></li>
+      <li><a href="https://t.me/vsvnepr" target="_blank">Telegram</a></li>
+    </ul>
+    <ol> Нумерованный список:
+      <li>Первый</li>
+      <li>Второй</li>
+    </ol>
+    <hr>
+    <h2>Work experience</h2>
+    <table border="2">
+      <tr>
+        <th>Company</th>
+        <th>Должность</th>
+        <th>Период </th>
+      </tr>
+      <tr>
+        <td>ООО "Мотор Групп"</td>
+        <td>Системный администратор</td>
+        <td>2015-2022</td>
+      </tr>
+    </table>
+    <hr>
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <td>2010-2015</td>
+        <td>Belarusian State University of Informatics and Radioelectronics, Radioelectronics engineer.</td>
+      </tr>
+      <tr>
+        <td>2021-2022</td>
+        <td>Educational Center for Programming and High Technologies “IT-Academy”
+Course: Functional Testing of Software
+Description: Learning of theory and practice of functional testing such as basics of testing, bug reporting, creating of test documentation, preparing Test Results Reports, Mobile Application Testing, Web Application Testing, Mobile Application Testing, basics of SQL. Was in team work as a team lead.
+        </td>
+      </tr>
+    </table>
+     
+    <hr>
+    <h2>Форма обратной связи</h2>
+    <form action="/"></form> <!--указывается какие действия вызываются формой-->
+    <label for="name">Ваше имя</label>
+    <input type="text" id="name" placeholder="Введите ваше имя..." >
+
+    <br>
+
+    <label for="email">Ваш email:</label>
+    <input type="text" name="email" id="email" placeholder="Введите email">
+
+    <br>
+
+    <textarea id="text" rows="2" cols="15" placeholder="Ваше сообщение"></textarea>
+
+    <br>
+
+    <input type="submit" value="Отправить...">
+
+
+
+
+    <script src="app.js"></script>  
+</body>
+
+</html>
